@@ -1,0 +1,27 @@
+<h2>Registration</h2>
+<div class="fluid-container">
+<div class="form-control">
+ <label>First Name:</label>   
+ <input type="text" [(ngModel)]="firstName"/>
+</div>
+<div class="form-control">
+    <label>Last Name: </label>   
+    <input type="text" [(ngModel)]="lastName"/>    
+</div>
+<div class="form-control">
+    <label>Username:  </label>   
+    <input type="text" [(ngModel)]="username"/>
+   </div>
+   <div class="form-control">
+    <label>Password:  </label>   
+    <input type="text" [(ngModel)]="password"/>
+   </div>
+   <div class="form-control">
+    <label>isAdmin:   </label>   
+    <input type="checkbox" [(ngModel)]="isAdmin"/>
+   </div>
+<div>
+    <button type="button" class="btn btn success" (click)="register()">Register</button>
+    <button type="button" class="btn btn">Reset</button>       
+</div>
+</div>

@@ -1,0 +1,18 @@
+<h2>Login</h2>
+<div *ngIf="isValidUser" class="alert alert-danger">
+    <h4>Invalid Username/Password.</h4>
+ </div>
+<div class="fluid-container">
+<div class="form-control">
+ <label>Username</label>   
+ <input type="text" [(ngModel)]="username"/>
+</div>
+<div class="form-control">
+    <label>Password</label>   
+    <input type="text" [(ngModel)]="password"/>
+</div>
+<div>
+    <button type="button" class="btn btn success" (click)="login()">Login</button>
+    <button type="button" (click)="register()" class="btn btn">Register</button>       
+</div>
+</div>

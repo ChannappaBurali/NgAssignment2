@@ -1,0 +1,9 @@
+<div class="container-fluid">
+    <span class="setup">Inc Counter</span>
+    <input type="text" class="form-control" [(ngModel)]="data"/>
+    <h1 class="punchline">{{data}}</h1>
+    <button type="button" class="btn btn-success" 
+    (click)="addNumber()">AddNumber</button>
+    <button type="button" class="btn btn-success" 
+    (click)="resetNumber()">Reset</button>
+ </div>
